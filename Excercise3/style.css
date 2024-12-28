@@ -1,0 +1,33 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+.container
+{
+    display: flex;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+
+.column
+{
+    background: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+button
+{
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+}
