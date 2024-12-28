@@ -19,16 +19,15 @@
 - **Lab 2 Exercise *(Christoph said this is not needed)***
 
 - **Lab 3 Exercise** 
-*- Add an image to each column:*
-*- Add a 'Change Me' button under each heading:*
+*- Add an image to each column:*<br>
+*- Add a 'Change Me' button under each heading:*<br>
 ![Screenshot of Excercise3-1,2](/Lab%20Screenshots/Excercise3/Excercise3-1,2.png)<br>
-*- Style your button with CSS:*
+*- Style your button with CSS:*<br>
 ![Screenshot of Excercise3-3](/Lab%20Screenshots/Excercise3/Excercise3-3.png)<br>
-*- Add a script tag with two JS functions, one for each button:*
-*- Clicking each button should change the background colour and the heading text for that column:*
+*- Add a script tag with two JS functions, one for each button:*<br>
+*- Clicking each button should change the background colour and the heading text for that column:*<br>
 ![Screenshot of Excercise3-4,5](/Lab%20Screenshots/Excercise3/Excercise3-4,5.png)<br>
-*Extensions were completed for this excercise as well. CSS and JS code moved into external files and linked to the html file. All relevant for this excercise can be found in the Excercise3 folder.*
-<br>
+*Extensions were completed for this excercise as well. CSS and JS code moved into external files and linked to the html file. All relevant for this excercise can be found in the Excercise3 folder.*<br>
 - Lab 4 Exercise
 - Lab 5 Exercise
 - Lab 6 Exercise
