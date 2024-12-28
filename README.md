@@ -3,18 +3,18 @@
 ---
 
 - **Lab 1 Exercise**
-*- Create a new folder:*
-![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-1.png)
-*- Create another folder inside the first one:*
-![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-2.png)
-*- Print the contents of the first folder:*
-![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-3.png)
-*- Change the directory to the second folder, and print the current path:*
-![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-4.png)
-*- Change directory back to the original starting polace:*
-![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-5.png)
-*- Delete the first folder:*
-![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-6.png)
+*- Create a new folder:* <br>
+![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-1.png)<br>
+*- Create another folder inside the first one:*<br>
+![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-2.png)<br>
+*- Print the contents of the first folder:*<br>
+![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-3.png)<br>
+*- Change the directory to the second folder, and print the current path:*<br>
+![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-4.png)<br>
+*- Change directory back to the original starting polace:*<br>
+![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-5.png)<br>
+*- Delete the first folder:*<br>
+![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-6.png)<br>
 
 - **Lab 2 Exercise *(Christoph said this is not needed)***
 
