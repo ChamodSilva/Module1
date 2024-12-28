@@ -2,7 +2,7 @@
 
 ---
 
-- **Lab 1 Exercise**
+- **Lab 1 Exercise**<br>
 *- Create a new folder:* <br>
 ![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-1.png)<br>
 *- Create another folder inside the first one:*<br>
@@ -18,7 +18,7 @@
 
 - **Lab 2 Exercise *(Christoph said this is not needed)***
 
-- **Lab 3 Exercise** 
+- **Lab 3 Exercise**<br>
 *- Add an image to each column:*<br>
 *- Add a 'Change Me' button under each heading:*<br>
 ![Screenshot of Excercise3-1,2](/Lab%20Screenshots/Excercise3/Excercise3-1,2.png)<br>
