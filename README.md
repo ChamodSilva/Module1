@@ -2,7 +2,7 @@
 
 ---
 
-- **Lab 1 Exercise**<br>
+### - **Lab 1 Exercise**<br>
 *- Create a new folder:* <br>
 ![Screenshot of Excercise1-1](/Lab%20Screenshots/Excercise1/Excercise1-1.png)<br>
 *- Create another folder inside the first one:*<br>
@@ -16,9 +16,9 @@
 *- Delete the first folder:*<br>
 ![Screenshot of Excercise1-6](/Lab%20Screenshots/Excercise1/Excercise1-6.png)<br>
 
-- **Lab 2 Exercise *(Christoph said this is not needed)***
+### - **Lab 2 Exercise *(Christoph said this is not needed)***
 
-- **Lab 3 Exercise**<br>
+### - **Lab 3 Exercise**<br>
 *- Add an image to each column:*<br>
 *- Add a 'Change Me' button under each heading:*<br>
 ![Screenshot of Excercise3-1,2](/Lab%20Screenshots/Excercise3/Excercise3-1,2.png)<br>
@@ -28,7 +28,15 @@
 *- Clicking each button should change the background colour and the heading text for that column:*<br>
 ![Screenshot of Excercise3-4,5](/Lab%20Screenshots/Excercise3/Excercise3-4,5.png)<br>
 *Extensions were completed for this excercise as well. CSS and JS code moved into external files and linked to the html file. All relevant for this excercise can be found in the Excercise3 folder.*<br>
-- Lab 4 Exercise
+### - **Lab 4 Exercise**<br>
+*1. Create 4 functions for the 4 main mathematical operations
+(-,+,/,*). Return the calculated value and then output it to the
+screen:*<br>
+*2. Create a function that takes the name of a person as an
+argument, and prints out “Hello [name]*” to the console.
+Hint: search online on how to concatenate two strings:*<br>
+
+
 - Lab 5 Exercise
 - Lab 6 Exercise
 - Lab 7 Exercise
