@@ -9,18 +9,26 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p id="calculations">Nothing.</p>
+        <h1>Basic Calculator</h1>
         <div class="container">
             <form>
-                <input type="text" id="numOne" placeholder="First Number"><br>
-                <input type="text" id="numTwo" placeholder="Second Number"><br>
+                <input type="number" id="numOne" placeholder="First Number"><br>
+                <input type="number" id="numTwo" placeholder="Second Number"><br>
                 <input type="button" value="+" onclick="calculate(value)" class="button">
                 <input type="button" value="-" onclick="calculate(value)" class="button">
-                <input type="button" value="x" onclick="calculate(value)" class="button">
+                <input type="button" value="*" onclick="calculate(value)" class="button">
                 <input type="button" value="/" onclick="calculate(value)" class="button">
-            </form>
-            
+            </form>  
         </div>
-    <script src="script.js"></script>
+        <p id="calculations">No Calculations</p>
+        <div class="container">
+            <form>
+                <input type="text" id="name" placeholder="Please enter your name."><br>
+                <input type="button" value="Greet!" onclick="greet()" class="button">
+            </form>  
+        </div>
+        <p id="greetings">No one to say hi to.</p>        
+        <!--Referencing script file within the folder-->
+        <script src="script.js"></script>
     </body>
 </html>
