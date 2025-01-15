@@ -214,13 +214,9 @@ body
     {
         transform: rotateY(0deg) rotateX(0deg);
     }
-    50%
-    {
-        transform: rotateY(360deg) rotateX(-360deg);
-    }
     100%
     {
-        transform: rotateY(0deg) rotateX(0deg);
+        transform: rotateY(720deg) rotateX(-720deg);
     }
 }
 
@@ -286,4 +282,12 @@ body
 .face.bottom
 {
     transform: rotateX(-90deg) translateZ(100px);
+}
+
+.face span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
 }
