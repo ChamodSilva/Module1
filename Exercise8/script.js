@@ -21,7 +21,7 @@ function cycleD6(result)
         current_faces.unshift(lastPair);
     }
     
-    
+    document.getElementById("resultface").innerText = current_faces[0][0];
 
 }
 

@@ -4,7 +4,6 @@
         <title>Die Roller</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
     </head>
     <body>
         <h1>So you want to roll a die?</h1>
@@ -19,6 +18,25 @@
         </div>
         <h3>You rolled a</h3>
         <p id="results">[Results Here]</p>
+        <div class="cube-container">
+            <div class="cube big">
+                <div class="face front"><span id="resultface">1</span></div>
+                <div class="face back"><span>6</span></div>
+                <div class="face left"><span>4</span></div>
+                <div class="face right"><span>3</span></div>
+                <div class="face top"><span>2</span></div>
+                <div class="face bottom"><span>5</span></div>
+            </div>
+            <div class="cube small">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
 
@@ -44,10 +62,10 @@
     </section>    
 </div>
 
-<div class="cube-container">
+<!-- <div class="cube-container">
     <section class="container">
         <div class="cube big">
-            <div class="face front"><span>1</span></div>
+            <div class="face front"><span class="result_face">1</span></div>
             <div class="face back"><span>6</span></div>
             <div class="face left"><span>4</span></div>
             <div class="face right"><span>3</span></div>
@@ -63,4 +81,4 @@
             <div class="face bottom"></div>
         </div>
     </section>
-</div>
+</div> -->
