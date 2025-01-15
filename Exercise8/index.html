@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Die Roller</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>So you want to roll a die?</h1>
+        <h2>Pick a die</h2>
+        <div class="dice-container">
+            <div class="dice-column-1">
+                <img src="assets/d6_dice.png" onclick="rollD6()">
+            </div>
+            <div class="dice-column-2">
+                <img src="assets/d10_dice.png" onclick="rollD10()">
+            </div>
+        </div>
+        <h3>You rolled a</h3>
+        <p id="results">[Results Here]</p>
+    </body>
+</html>
+
+<div class="diagram-container">
+    <section class="container diagram">
+        <div class="side front">
+          <header class="header">
+                <div class="shape">
+                    <div class="rectangle-md body"></div>
+                    <div class="rectangle-md border"></div>
+                </div>
+                <div class="shape">
+                    <div class="square body"></div>
+                    <div class="square border"></div>
+                </div>
+            </header>
+          <div class="shape">
+        <div class="rectangle-lg body"></div>
+        <div class="rectangle-lg border"></div>
+    </div>
+        </div>
+        <div class="side back"></div>
+    </section>    
+</div>
+
+<div class="cube-container">
+    <section class="container">
+        <div class="cube big">
+            <div class="face front">1</div>
+            <div class="face back">2</div>
+            <div class="face left">3</div>
+            <div class="face right">4</div>
+            <div class="face top">5</div>
+            <div class="face bottom">6</div>
+        </div>
+        <div class="cube small">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+    </section>
+</div>
