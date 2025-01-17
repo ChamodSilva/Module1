@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Rotating Cube</title>
+  <style>
+    .cube-container {
+      width: 150px;
+      height: 150px;
+      perspective: 800px;
+      margin: 50px auto;
+    }
+
+    .cube {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate 2s infinite linear;
+    }
+
+    .cube div {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      backface-visibility: hidden;
+    }
+
+    .cube div:nth-child(1) {
+      transform: rotateY(0deg) translateZ(75px); 
+      background-color: #FF5733; /* Red */
+    }
+
+    .cube div:nth-child(2) {
+      transform: rotateY(90deg) translateZ(75px);
+      background-color: #33FF57; /* Green */
+    }
+
+    .cube div:nth-child(3) {
+      transform: rotateY(180deg) translateZ(75px);
+      background-color: #5733FF; /* Blue */
+    }
+
+    .cube div:nth-child(4) {
+      transform: rotateY(-90deg) translateZ(75px);
+      background-color: #FFC300; /* Yellow */
+    }
+
+    .cube div:nth-child(5) {
+      transform: rotateX(90deg) translateZ(75px);
+      background-color: #FF5733; /* Red */ 
+    }
+
+    .cube div:nth-child(6) {
+      transform: rotateX(-90deg) translateZ(75px);
+      background-color: #33FF57; /* Green */ 
+    }
+
+    @keyframes rotate {
+      0% { transform: rotateX(0deg) rotateY(0deg); }
+      100% { transform: rotateX(1080deg) rotateY(1080deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cube-container">
+    <div class="cube">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+</body>
+</html>

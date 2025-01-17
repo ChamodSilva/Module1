@@ -6,27 +6,26 @@ const d6_odd_faces = [[1,6],[3,4],[5,2]];
 const d6_path_start = "assets/d6/";
 const d6_path_end = "_face.png"
 
-const d6_faces = 
-[
-    document.getElementById("result_face"),
-    document.getElementById("opposite_face"),
-    document.getElementById("left_face"),
-    document.getElementById("right_face"),
-    document.getElementById("top_face"),
-    document.getElementById("bottom_face"),
-]
+const d6_face_ids = ["result_face", "opposite_face", "left_face", "right_face", "top_face", "bottom_face"];
 
-const d6_die = document.querySelector('.dice');
+const d6_six_face = "assets/d6/6_face.png";
+const d6_one_face = "assets/d6/1_face.png";
+const d6_four_face = "assets/d6/4_face.png";
+const d6_three_face = "assets/d6/3_face.png";
+const d6_two_face = "assets/d6/2_face.png";
+const d6_five_face = "assets/d6/5_face.png";
 
 function updateD6Faces(faces)
 {
     i=0;
     for (const pair of faces)
     {
+        console.log(pair);
 
         for (const element of pair)
         {
-            d6_faces[i].src = `${d6_path_start}${element}${d6_path_end}`
+            console.log(element);
+            document.getElementById(d6_face_ids[i]).src = `${d6_path_start}${element}${d6_path_end}`
             i++;
         }
     }
@@ -53,7 +52,6 @@ function cycleD6(result)
     updateD6Faces(current_faces);
 }
 
-
 function rollD6()
 {
     //Declaring the constants of the dices minimum and maximum roll.
@@ -67,17 +65,9 @@ function rollD6()
     
     console.log(result)
 
-    d6_die.style.animation = 'dice-roll 2s linear';
-    d6_die.addEventListener('animationiteration', () =>
-    {
-        console.log("I am rolling!!!")
-        d6_die.style.animation = 'none';
-        cycleD6(result);
-    })
-
     //Updating the result on the html page
     updateResult(result);
-    
+    cycleD6(result);
 }
 
 function rollD10()

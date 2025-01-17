@@ -1,0 +1,296 @@
+@keyframes full-body-rotation
+{
+    from
+    {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    to
+    {
+        transform: rotateY(-35deg) rotateX(25deg);
+    }
+}
+
+@keyframes seperation-back
+{
+    from
+    {
+        transform: translateZ(0px);
+    }
+    to
+    {
+        transform: translateZ(-75px);
+    }
+}
+
+@keyframes seperation-body
+{
+    from
+    {
+        transform:
+            translateZ(0px)
+            translate(-50%, -50%);
+    }
+    to
+    {
+        transform: 
+            translateZ(60px)
+            translate(-50%, -50%);
+    }
+}
+
+@keyframes full-spin
+{
+    0%
+    {
+        transform: rotateY(-35deg) rotateX(25deg);
+    }
+    100%
+    {
+        transform: rotateY(360deg) rotateY(-35deg) rotateX(25deg);
+    }
+}
+
+body 
+{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    place-items: center;
+    flex-direction: row;
+    font-family: sans-serif;
+    height: inherit;
+}
+
+.dice-container 
+{
+    display: flex;
+    height: inherit;
+}
+
+.diagram-container
+{
+    display: flex;
+    background-color: rgb(0, 12, 12);
+    padding: 5rem;
+    height: 40vh;
+    width: 20vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cube-container
+{
+    display: flex;
+    background-color: rgb(0, 12, 12);
+    height: 20vh;
+    width: 27.5vw;
+    justify-content: center;
+
+}
+
+/* Diagram Style */
+.container
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.diagram
+{
+    animation: 
+        full-body-rotation 1.5s
+        ease-in-out forwards,
+        full-spin 20s;
+    animation-delay: 0.5s, 4s;
+    perspective: 2000px;
+}
+
+.side
+{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+}
+
+.side.front
+{
+    transform-style: inherit;
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px dashed rgba(34, 143, 231, 0.8);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.side.back
+{
+    border: 2px solid rgb(34, 143, 231);
+    padding: 1.5rem;
+    animation:
+        seperation-back 1s
+        ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+.header
+{
+    transform-style: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shape
+{
+    transform-style: inherit;
+}
+
+.body
+{
+    background-color: rgba(175, 175, 175, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.border
+{
+    border: 2px dashed rgba(34, 143, 231, 0.7);
+}
+
+.rectangle-md
+{
+    height: 70px;
+    width: 280px;
+}
+
+.rectangle-md.body
+{
+    animation:
+        seperation-body 0.2s
+        ease-in-out forwards;
+        animation-delay: 3.25s;
+}
+
+.square
+{
+    height: 70px;
+    width: 70px;
+}
+
+.square.body
+{
+    animation:
+        seperation-body 0.2s
+        ease-in-out forwards;
+    animation-delay: 3.4s;
+}
+
+.rectangle-lg
+{
+    height: 250px;
+    width: 100%;
+}
+
+.rectangle-lg.body
+{
+    margin-left: 2px;
+    animation:
+        seperation-body 0.2s
+        ease-in-out forwards;
+    animation-delay: 3.6s;
+}
+
+/* Cube Style */
+@keyframes big-cube-spin
+{
+    0%
+    {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%
+    {
+        transform: rotateY(1080deg) rotateX(-1080deg);
+    }
+}
+
+.cube
+{
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    position: relative;
+    perspective: 6000px;
+    transform-style: preserve-3d;
+}
+
+.cube.big
+{
+    animation: big-cube-spin 2s ease infinite;
+}
+
+.face
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    position: absolute;
+    color: black;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    background-color: azure;
+    border: 5px solid rgba(175, 175, 175, 0.7)
+}
+
+.face.front
+{
+    transform: translateZ(75px);
+}
+
+.face.back
+{
+    transform: rotateX(-180deg) translateZ(75px);
+}
+
+.face.left
+{
+    transform: rotateY(-90deg) translateZ(75px);
+}
+
+.face.right
+{
+    transform: rotateY(90deg) translateZ(75px);
+}
+
+.face.top
+{
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.face.bottom
+{
+    transform: rotateX(-90deg) translateZ(75px);
+}
+
+.face span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.dieface
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

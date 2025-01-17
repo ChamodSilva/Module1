@@ -24,20 +24,15 @@ body
     width: 40vw;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 
 /* Cube Style */
-@keyframes dice-roll
+@keyframes big-cube-spin
 {
     0%
     {
         transform: rotateY(0deg) rotateX(0deg);
-    }
-    50%
-    {
-        transform: rotateY(540deg) rotateX(-540deg); /*Iteration at 50% so eventListner knows to change the results.*/
     }
     100%
     {
@@ -47,11 +42,17 @@ body
 
 .dice
 {
-    width: 150px;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    place-content: center;
     position: relative;
     perspective: 6000px;
     transform-style: preserve-3d;
+}
+
+.dice.big
+{
+    animation: big-cube-spin 2s ease infinite;
 }
 
 .face
