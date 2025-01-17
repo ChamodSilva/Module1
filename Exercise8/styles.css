@@ -11,40 +11,41 @@ body
     height: inherit;
 }
 
+button
+{
+    height: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 18px;
+    justify-content: center;
+}
+
 .dice-container 
 {
     display: flex;
-    height: inherit;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: row;
 }
 
 .roll-container 
 {
     background-color: black;
-    height: 40vh;
-    width: 40vw;
+    height: 30vh;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-/* Cube Style */
-@keyframes dice-roll
-{
-    0%
-    {
-        transform: rotateY(0deg) rotateX(0deg);
-    }
-    50%
-    {
-        transform: rotateY(540deg) rotateX(-540deg); /*Iteration at 50% so eventListner knows to change the results.*/
-    }
-    100%
-    {
-        transform: rotateY(1080deg) rotateX(-1080deg);
-    }
-}
-
+/*d6 Style */
 .dice
 {
     width: 150px;
@@ -107,9 +108,150 @@ body
     font-size: 5em;
 }
 
-.dieface
+.d6-dieface
 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes dice-roll-mid
+{
+    0%
+    {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%
+    {
+        transform: rotateY(360deg) rotateX(-360deg);
+    }
+}
+
+@keyframes dice-roll-full
+{
+    0%
+    {
+        transform: rotateY(360deg) rotateX(-360deg);
+    }
+    100%
+    {
+        transform: rotateY(720deg) rotateX(-720deg);
+    }
+}
+
+/*d10 Style */
+@keyframes d10-roll-mid
+{
+    0%
+    {
+        transform: rotateY(0deg) rotateX(-22.5deg);
+    }
+    100%
+    {
+        transform: rotateY(360deg) rotateX(-382.5deg);
+    }
+}
+
+@keyframes d10-roll-full
+{
+    0%
+    {
+        transform: rotateY(360deg) rotateX(-382.5deg);
+    }
+    100%
+    {
+        transform: rotateY(720deg) rotateX(-742.5deg);
+    }
+}
+
+.shape-container
+{
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+}
+
+.d10
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) rotateX(-22.5deg);
+    animation: spin 1s  ease;
+}
+
+.d10-dieface
+{
+    display: flex;
+    padding-top: 15px;
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape
+{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px saddlebrown solid;
+    clip-path: polygon(50% 0%, 88.5% 75%, 50% 95%, 11.5% 75%);
+    position: absolute;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.shape.front
+{
+    transform: rotateY(0deg) rotateX(45deg) translateZ(50px);
+}
+
+.shape.left
+{
+    transform: rotateY(-72deg) rotateX(45deg) translateZ(50px);
+}
+
+.shape.right
+{
+    transform: rotateY(72deg) rotateX(45deg) translateZ(50px);
+}
+
+.shape.left-back
+{
+    transform: rotateY(144deg) rotateX(45deg) translateZ(50px);
+}
+
+.shape.right-back
+{
+    transform: rotateY(-144deg) rotateX(45deg) translateZ(50px);
+}
+
+.shape.bottom-front
+{
+    transform: rotateY(0deg) rotateX(45deg) rotateZ(180deg) translateZ(-34.5px) translateY(14.5px);
+}
+
+.shape.bottom-left
+{
+    transform: rotateY(-72deg) rotateX(45deg) rotateZ(180deg) translateZ(-34.5px) translateY(14.5px);
+}
+
+.shape.bottom-right
+{
+    transform: rotateY(72deg) rotateX(45deg) rotateZ(180deg) translateZ(-34.5px) translateY(14.5px);
+}
+
+.shape.bottom-left-back
+{
+    transform: rotateY(144deg) rotateX(45deg) rotateZ(180deg) translateZ(-34.5px) translateY(14.5px);
+}
+
+.shape.bottom-right-back
+{
+    transform: rotateY(-144deg) rotateX(45deg) rotateZ(180deg) translateZ(-34.5px) translateY(14.5px);
 }

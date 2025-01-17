@@ -7,27 +7,43 @@
     </head>
     <body>
         <h1>So you want to roll a die?</h1>
-        <h2>Pick a die</h2>
-        <div class="dice-container">
-            <div class="dice-column-1">
-                <img src="assets/d6_dice.png" onclick="rollD6()">
+        <h2>Choose a die to roll!</h2>
+        </div>
+        <div class="main-container">
+            <div class="dice-container">
+                <div class="roll-container">
+                    <div class="dice">
+                        <div class="face front"><img class="d6-dieface" src="assets/d6/1_face.png" id="result_face"></div>
+                        <div class="face back"><img class="d6-dieface" src="assets/d6/6_face.png" id="opposite_face"></div>
+                        <div class="face left"><img class="d6-dieface" src="assets/d6/4_face.png" id="left_face"></div>
+                        <div class="face right"><img class="d6-dieface" src="assets/d6/3_face.png" id="right_face"></div>
+                        <div class="face top"><img class="d6-dieface" src="assets/d6/2_face.png" id="top_face"></div>
+                        <div class="face bottom"><img class="d6-dieface" src="assets/d6/5_face.png" id="bottom_face"></div>
+                    </div>
+                </div>
+                <button onclick="rollD6()">Roll D6!</button>
+                <p id="d6-result">[Results Here]</p>
             </div>
-            <div class="dice-column-2">
-                <img src="assets/d10_dice.png" onclick="rollD10()">
+            <div class="dice-container">
+                <div class="roll-container">
+                    <div class="d10">
+                        <div class="shape front"><img class="d10-dieface" src="assets/d10/1_face.png" id="result_top_face"></div>
+                        <div class="shape left"><img class="d10-dieface" src="assets/d10/7_face.png" id="left_top_face"></div>
+                        <div class="shape right"><img class="d10-dieface" src="assets/d10/3_face.png" id="right_top_face"></div>
+                        <div class="shape left-back"><img class="d10-dieface" src="assets/d10/5_face.png" id="left-back_top_face"></div>
+                        <div class="shape right-back"><img class="d10-dieface" src="assets/d10/9_face.png" id="right-back_top_face"></div>
+                        <div class="shape bottom-front"><img class="d10-dieface" src="assets/d10/10_face.png" id="front_bottom_face"></div>
+                        <div class="shape bottom-left"><img class="d10-dieface" src="assets/d10/8_face.png" id="left_bottom_face"></div>
+                        <div class="shape bottom-right"><img class="d10-dieface" src="assets/d10/4_face.png" id="right_bottom_face"></div>
+                        <div class="shape bottom-left-back"><img class="d10-dieface" src="assets/d10/2_face.png" id="left-back_bottom_face"></div>
+                        <div class="shape bottom-right-back"><img class="d10-dieface" src="assets/d10/6_face.png" id="right-back_bottom_face"></div>
+                    </div>
+                </div>
+                <button onclick="rollD10()">Roll D10!</button>
+                <p id="d10-result">[Results Here]</p>
             </div>
         </div>
-        <h3>You rolled a</h3>
-        <p id="results">[Results Here]</p>
-        <div class="roll-container">
-            <div class="dice">
-                <div class="face front"><img class="dieface" src="assets/d6/1_face.png" id="result_face"></div>
-                <div class="face back"><img class="dieface" src="assets/d6/6_face.png" id="opposite_face"></div>
-                <div class="face left"><img class="dieface" src="assets/d6/4_face.png" id="left_face"></div>
-                <div class="face right"><img class="dieface" src="assets/d6/3_face.png" id="right_face"></div>
-                <div class="face top"><img class="dieface" src="assets/d6/2_face.png" id="top_face"></div>
-                <div class="face bottom"><img class="dieface" src="assets/d6/5_face.png" id="bottom_face"></div>
-            </div>
-        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
