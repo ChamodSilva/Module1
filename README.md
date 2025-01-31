@@ -121,11 +121,13 @@
 <div style="border: 12px solid #ccc; padding: 10px; margin-bottom: 10px;">
 <details>
   <summary>Exercise8</summary>
+  Can be found in /Exercise8 Folder.
 </details>
 </div>
 
 <div style="border: 12px solid #ccc; padding: 10px; margin-bottom: 10px;">
 <details>
   <summary>Exercise9</summary>
+  Demonstrating the use of git.
 </details>
 </div>
