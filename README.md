@@ -1,4 +1,4 @@
-## Repository for uploading lab exercises.
+## Repository for uploading Module 1 lab exercises.
 
 ---
 <div style="border: 12px solid #ccc; padding: 10px; margin-bottom: 10px;">
